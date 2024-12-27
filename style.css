@@ -1,58 +1,90 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
-.container {
-    text-align: center;
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: 300px;
+header {
+  background-color: #f1c7d0;
+  text-align: center;
+  padding: 50px 20px;
+  width: 100%;
 }
 
-h1 {
-    font-size: 2rem;
-    color: #007BFF;
+header h1 {
+  font-size: 3rem;
+  color: #ff3366;
 }
 
-p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
+header p {
+  font-size: 1.5rem;
+  color: #333;
 }
 
-.buttons {
-    margin-top: 20px;
+main {
+  text-align: center;
+  padding: 20px;
 }
 
-button {
-    background-color: #007BFF;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin: 10px;
-    transition: transform 0.3s ease;
+.invite-details {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  width: 70%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease-in-out;
 }
 
-button:hover {
-    background-color: #0056b3;
+h2 {
+  color: #ff3366;
 }
 
-#noButton {
-    position: relative;
+.cta {
+  margin-top: 20px;
 }
 
+.confirm-btn {
+  background-color: #ff3366;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.confirm-btn:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #f1c7d0;
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
